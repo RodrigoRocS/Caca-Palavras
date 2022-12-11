@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.game {
+    background-color: rgb(99, 4, 4);
+    width: 50%;
+    height: 650px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.matriz {
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid black;
+}
