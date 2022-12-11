@@ -1,3 +1,5 @@
+const arrayWords = ['LARANJA', 'PERA', 'GOIABA', 'UVA', 'MANGA'];
+
 const generateCells = () => {
   const matriz = document.querySelector(".matriz");
   for (let index = 0; index < 10; index += 1) {
@@ -12,3 +14,21 @@ const generateCells = () => {
   }
 };
 generateCells();
+
+const addWords = () => {
+    const lines = document.querySelectorAll('.line');
+    const indexLine = Math.floor(Math.random() * lines.length);
+    const indexWord = Math.floor(Math.random() * arrayWords.length)
+    const word = arrayWords[indexWord];
+    const cells = lines[indexLine].querySelectorAll('.cell');
+    const indexCell = Math.floor(Math.random() * (cells.length - word.length + 1));
+
+    for (let index = 0; index < word.length; index += 1) {
+        cells[indexCell + index].innerText = word[index]; 
+    }
+}
+
+for (let index = 0; index < arrayWords.length; index += 1) {
+    addWords();
+}
+addWords();
