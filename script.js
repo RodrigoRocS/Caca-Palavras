@@ -26,9 +26,10 @@ const addWords = () => {
     for (let index = 0; index < word.length; index += 1) {
         cells[indexCell + index].innerText = word[index]; 
     }
+    lines[indexLine].className = 'lineOk';
+    arrayWords.splice(indexWord, 1);
 }
 
-for (let index = 0; index < arrayWords.length; index += 1) {
+for (let index = arrayWords.length; index > 0; index -= 1) {
     addWords();
 }
-addWords();
