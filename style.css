@@ -42,3 +42,26 @@ body {
     padding: 7px 0px;
     box-sizing: border-box;
 }
+
+.selected {
+    background-color: rgb(223, 223, 107);
+}
+
+.found {
+    background-color: rgb(86,251,64);
+}
+
+.liFound {
+    text-decoration: line-through;
+    color: lawngreen;
+}
+
+.btn-clear {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-top: 20px;
+    cursor: pointer;
+}
